@@ -1,17 +1,36 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  max-width: 70%;
   font-family: sans-serif;
 }
 
-.nav-links {
+.nav-container {
     display: flex;
-    list-style: none;
-    padding-left: 0;
-  }
-  .nav-link-item {
-    padding-right: 2rem;
-  }
-  .nav-link-text {
-    color: black;
-  }
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    background-color: rgb(55,55,55);
+    color: white;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+padding-left: 10%;
+}
+.nav-link-item {
+padding-right: 2rem;
+}
+.nav-link-text {
+color: white;
+}
+
+a:visited {
+    color:white;
+}
+
+.site-title {
+font-size: 3rem;
+color: gray;
+font-weight: 700;
+}

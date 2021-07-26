@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "zerotest",
+    title: "Zeros Test Site",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -15,5 +14,12 @@ module.exports = {
       },
       __key: "images",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: './src/blog/',
+      },
+    }
   ],
 };
