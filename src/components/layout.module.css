@@ -2,14 +2,17 @@
   margin: auto;
   max-width: 70%;
   font-family: sans-serif;
+  padding-top: 3em;
 }
 
 .nav-container {
     display: flex;
     width: 100%;
     margin: auto;
-    position: absolute;
-    background-color: rgb(55,55,55);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(55, 55, 55);
     color: white;
 }
 
@@ -18,9 +21,11 @@ display: flex;
 list-style: none;
 padding-left: 10%;
 }
+
 .nav-link-item {
 padding-right: 2rem;
 }
+
 .nav-link-text {
 color: white;
 }
