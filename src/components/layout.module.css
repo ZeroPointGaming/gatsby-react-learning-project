@@ -1,36 +1,37 @@
 .container {
   margin: auto;
+  padding-top: 4rem;
   max-width: 70%;
   font-family: sans-serif;
 }
 
 .nav-container {
-    display: flex;
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    background-color: rgb(55,55,55);
-    color: white;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  background-color: rgb(55, 55, 55);
+  color: white;
 }
 
 .nav-links {
-display: flex;
-list-style: none;
-padding-left: 10%;
+  display: flex;
+  list-style: none;
+  padding-left: 10%;
 }
 .nav-link-item {
-padding-right: 2rem;
+  padding-right: 2rem;
 }
 .nav-link-text {
-color: white;
+  color: white;
 }
 
 a:visited {
-    color:white;
+  color: white;
 }
 
 .site-title {
-font-size: 3rem;
-color: gray;
-font-weight: 700;
+  font-size: 3rem;
+  color: gray;
+  font-weight: 700;
 }
