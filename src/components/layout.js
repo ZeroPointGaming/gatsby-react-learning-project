@@ -2,6 +2,7 @@ import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
+//#region CSS Definitions
 const NavigationMenu = styled.nav`
   display: flex;
   width: 100%;
@@ -31,7 +32,6 @@ const MainContainer = styled.div`
 `
 
 const MainHeading = styled.h1`
-  background-color: grey;
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -40,6 +40,7 @@ const MainHeading = styled.h1`
 const NavLinkText = styled.a`
   color: white;
 `
+//#endregion
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
@@ -57,18 +58,18 @@ const Layout = ({ pageTitle, children }) => {
 
   return (
     <main>
+      {/*Page Title*/}
+      <title>{pageTitle} | {data.site.siteMetadata.title}</title>
+
       <NavigationMenu>
         <NavigationLinks>
           <NavigationLink><NavLinkText href="/">Home</NavLinkText></NavigationLink>
-          <NavigationLink><NavLinkText href="/about">About</NavLinkText></NavigationLink>
           <NavigationLink><NavLinkText href="/blog">Blog</NavLinkText></NavigationLink>
+          <NavigationLink><NavLinkText href="/about">About</NavLinkText></NavigationLink>
         </NavigationLinks>
       </NavigationMenu>
 
       <MainContainer>
-            {/*Page Title*/}
-            <title>{pageTitle} | {data.site.siteMetadata.title}</title>
-            
             {/* Main Header */}
             <MainHeading>{pageTitle}</MainHeading>
 
