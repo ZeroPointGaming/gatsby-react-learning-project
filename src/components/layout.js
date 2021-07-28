@@ -1,41 +1,80 @@
 import * as React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby'
-import { container, heading, navLinks, navLinkItem, navLinkText, navContainer } from './layout.module.css'
+import { useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
+
+const NavigationMenu = styled.nav`
+  display: flex;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(55, 55, 55);
+  color: white;
+`
+
+const NavigationLinks = styled.ul`
+  display: flex;
+  list-style: none;
+  padding-left: 10%;
+`
+
+const NavigationLink = styled.li`
+  padding-right: 2rem;
+`
+
+const MainContainer = styled.div`
+  margin: auto;
+  max-width: 70%;
+  font-family: sans-serif;
+  padding-top: 3em;
+`
+
+const MainHeading = styled.h1`
+  background-color: grey;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+`
+
+const NavLinkText = styled.a`
+  color: white;
+`
 
 const Layout = ({ pageTitle, children }) => {
     const data = useStaticQuery(graphql`
-        query {
-        site {
-            siteMetadata {
-            title
+        query 
+        {
+          site 
+          {
+            siteMetadata 
+            {
+              title
             }
-        }
+          }
         }
     `)
 
   return (
     <main>
-      <div className={navContainer}>
-            {/*Navigation Bar*/}
-            <nav>
-                <ul className={navLinks}>
-                    <li class={navLinkItem}><Link to="/" class={navLinkText}>Home</Link></li>
-                    <li class={navLinkItem}><Link to="/about" class={navLinkText}>About</Link></li>
-                    <li class={navLinkItem}><Link to="/blog" class={navLinkText}>Blog</Link></li>
-                </ul>
-            </nav>
-      </div>
+      <NavigationMenu>
+        <NavigationLinks>
+          <NavigationLink><NavLinkText href="/">Home</NavLinkText></NavigationLink>
+          <NavigationLink><NavLinkText href="/about">About</NavLinkText></NavigationLink>
+          <NavigationLink><NavLinkText href="/blog">Blog</NavLinkText></NavigationLink>
+        </NavigationLinks>
+      </NavigationMenu>
 
-      <div className={container}>
+      <MainContainer>
             {/*Page Title*/}
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
             
             {/* Main Header */}
-            <h1 className={heading}>{pageTitle}</h1>
+            <MainHeading>{pageTitle}</MainHeading>
 
             {/* Main Contnent Body */}
             {children}
-      </div>
+      </MainContainer>
     </main>
   )
 }
