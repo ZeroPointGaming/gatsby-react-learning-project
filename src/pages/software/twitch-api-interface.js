@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/twitchapiviewer.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
+const TwitchAPIInterface = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/TwitchApiViewrList/releases/download/1.1/TwitchApiViewrList.exe";
+  const AppMainHeader = "Twitch Chatters API Interface";
+  const AppMainDescription = "Displays all twitch users connected to a twitch channels chat.";
   const LatestVersion = "v1.1";
 
-  const ContentDescription = ""
+  const ContentDescription = "A simple gui application that displays all users connected to a twitch channels chat. Our code uses a JSON response from the twitch API to display data about users connected to a twitch channels chat."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Twitch Api Interface Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/TwitchApiViewrList/releases"
 
   return (
       <Wrapper>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default TwitchAPIInterface

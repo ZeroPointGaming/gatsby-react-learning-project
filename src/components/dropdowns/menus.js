@@ -4,16 +4,22 @@ export const WebsiteItems = [
   ];
 
 export const SoftwareItems = [
-  { title: '.NET Simple Download Manager', path: '/software/download-manager' },
-  { title: '.NET Twitch Chatters Api Interface', path: '/software/dot-net-twitch-api-interface' },
-  { title: '.NET Weather API Interface', path: '/software/dot-net-weather-api-interface' },
-  { title: '.NET Simple Inventory Management System', path: '/software/simple-dot-net-inventory-management' },
-  { title: '.NET Simple Notes Program', path: '/software/simple-dot-net-notes' },
-  { title: '.NET Simple Accounting Software', path: '/software/simple-dot-net-accounting-software' },
+  { title: 'Download Manager', path: '/software/download-manager' },
+  { title: 'Twitch Chatters Api Interface', path: '/software/twitch-api-interface' },
+  { title: 'Weather API Interface', path: '/software/weather-api-interface' },
+  { title: 'Inventory Management System', path: '/software/inventory-management' },
+  { title: 'Notes Program', path: '/software/notes' },
+  { title: 'Accounting Software', path: '/software/accounting-software' },
+  { title: 'Warframe Companion App', path: '/software/warframe-companion-app' }
 ];
 
 export const WebappItems = [
   { title: 'Durbin Connect Reporting System', path: 'http://reporting.durbinconnect.com' }
+];
+
+export const Bots = [
+  { title: 'Twitch Warframe Companion Bot', path: '#' },
+  { title: 'Discord Warframe Companion Bot', path: '#' }
 ];
 
 export const ConnectItems = [

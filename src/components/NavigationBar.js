@@ -9,7 +9,7 @@ const NavigationBar = () => {
     const [software, setSoftwareDropdown] = useState(false);
     //const [webapps, setWebappDropdown] = useState(false);
     const [connect, setConnectDropdown] = useState(false);
-    const [irl, setIrlDropdown] = useState(false);
+    //const [irl, setIrlDropdown] = useState(false);
 
     const closeMobileMenu = () => setClick(false);
 
@@ -79,6 +79,7 @@ const NavigationBar = () => {
     };
     */
 
+    /*
     const IrlOnMouseEnter = () => {
         if (window.innerWidth < 960) {
             setIrlDropdown(false);
@@ -94,11 +95,15 @@ const NavigationBar = () => {
             setIrlDropdown(false);
         }
     };
+    */
 
     return (
         <header id="header" className="alt reveal">
             <nav className="navMax navbar navbar-expand-lg navbar-dark">
                 <ul>
+                    <a className="HomeLink" href="/">Home</a>
+
+                    {/*
                     <li className="nav-item dropdown" onMouseEnter={IrlOnMouseEnter} onMouseLeave={IrlOnMouseLeave}>
                         <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IRL Projects</a>
                         
@@ -106,6 +111,7 @@ const NavigationBar = () => {
                             {IRLItems.map((linkItem) => <a className="dropdown-item" href={linkItem.path}>{linkItem.title}</a>)}
                         </div>
                     </li>
+                    */}
 
                     <li className="nav-item dropdown" onMouseEnter={SoftwareOnMouseEnter} onMouseLeave={SoftwareOnMouseLeave}>
                         <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Software Projects</a>

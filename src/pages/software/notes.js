@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/stickynotecs.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
-  const LatestVersion = "v1.1";
+const NotesApp = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/StickyNotesProgram/releases/download/1.0.22.0254/PostItNoteSystem.exe";
+  const AppMainHeader = "SICKY NOTES PROGRAM";
+  const AppMainDescription = "A sticky notes program written in c#.";
+  const LatestVersion = "v1.0.22.0254";
 
-  const ContentDescription = ""
+  const ContentDescription = "A sticky notes like system where a user can write and save small notes on a sticky note program written in c#."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Notes App Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/StickyNotesProgram"
 
   return (
       <Wrapper>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default NotesApp

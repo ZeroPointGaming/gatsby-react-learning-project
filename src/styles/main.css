@@ -16,6 +16,17 @@
     text-decoration: none;
 }
 
+.HomeLink
+{
+    text-decoration: none;
+	color: white;
+}
+
+.repo-link
+{
+	text-align: center;
+}
+
 .bold
 {
 	font-weight: bold !important; 
@@ -1059,7 +1070,7 @@
 	#banner{
 		background-attachment: scroll, scroll, scroll, fixed;
 		background-color: #645862;
-		/*background-image: url(".src/images/light-bl.svg"), url("./src/images/light-br.svg"), url("./src/images/overlay.png"), url("../../src/images/tarkov-banner-tall.png");*/
+		background-image: url("./tarkov-banner-tall.png");
 		background-position: bottom left, bottom right, top left, top center;
 		background-repeat: no-repeat, no-repeat, repeat, no-repeat;
 		background-size: 25em, 25em, auto, cover;

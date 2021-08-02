@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/weatherviewer.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
-  const LatestVersion = "v1.1";
+const WeatherViewer = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/WeatherAppViaJSONApi/releases/download/1.0/WeatherAppViaJSONApi.exe";
+  const AppMainHeader = "WEATHER APPLICATION USING JSON API RESPONSE";
+  const AppMainDescription = "Shows you the weather for your local area.";
+  const LatestVersion = "v1.0";
 
-  const ContentDescription = ""
+  const ContentDescription = "Displays local weather data and uses multiple json api integrations for location and weather services."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Weather Viewer Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/WeatherAppViaJSONApi"
 
   return (
       <Wrapper>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default WeatherViewer

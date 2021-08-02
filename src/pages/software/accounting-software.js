@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/accountingsoftware.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
-  const LatestVersion = "v1.1";
+const AccountingApp = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/AccountsRecievableProject/releases/download/1.0/AccountsRecievable.exe";
+  const AppMainHeader = "Accounting App";
+  const AppMainDescription = "Accounting Software Built In Visual Basic";
+  const LatestVersion = "v1.0";
 
-  const ContentDescription = ""
+  const ContentDescription = "A simple take on accounting software using the obsolete microsoft binary serialization library."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Accounting App Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/AccountsRecievableProject"
 
   return (
       <Wrapper>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default AccountingApp

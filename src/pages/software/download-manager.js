@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/dlm.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
+const SimpleDownloadManager = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/SimpleDownloadManager/releases/download/1.1/BatchDownloadManager.exe";
+  const AppMainHeader = "Windows Batch Download Manager";
+  const AppMainDescription = "Downloads a batch list of links in the order they were added.";
   const LatestVersion = "v1.1";
 
-  const ContentDescription = ""
+  const ContentDescription = "Add a list of links to the textbox on the left click add, each link will be added to the list on the right, click download and the files will be downloaded to the place you selected them to be saved to."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Windows Download Manager Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/SimpleDownloadManager/releases"
 
   return (
       <Wrapper>
@@ -51,7 +51,7 @@ const DotNetTwitchAPIInterface = () => {
 
             <ContentSection className="container">
               <p className="repo-link">Latest Version: {LatestVersion}</p>
-              <ColumnFullWidth postImageSrc={ContentImage} postDescription={ContentDescription} postImageAlt={ContentImageAlt}></ColumnFullWidth>
+              <ColumnFullWidth postImageSrc={ContentImage} postDescription={ContentDescription} postImageAlt={ContentImageAlt} overflowImage="1"></ColumnFullWidth>
 
               <p className="repo-link">Click <a href={ContentRepoLink}>Here</a> to visit the github repository for this project.</p>
             </ContentSection>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default SimpleDownloadManager

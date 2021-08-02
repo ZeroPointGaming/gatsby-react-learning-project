@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/inventorymanagercs.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
-  const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
-  const LatestVersion = "v1.1";
+const InventorySystem = () => {
+  const AppDownloadUrl = "https://github.com/ZeroPointGaming/InventoryManagmentSystem/releases/download/1.0.21.0531/InventoryManagmentSystem.exe";
+  const AppMainHeader = "INVENTORY MANAGMENT SYSTEM";
+  const AppMainDescription = "A system for managing a inventory of products using binary serialization to save and load data to and from the local storage. This implements some basic implementations of class usage, IO streams, and binary object encryption. This project was built in C# using Visual Studio.";
+  const LatestVersion = "v1.0";
 
-  const ContentDescription = ""
+  const ContentDescription = "A system for managing a inventory of products using binary serialization to save and load data to and from the local storage. This implements some basic implementations of class usage, IO streams, and binary object encryption. This project was built in C# using Visual Studio. Binary object serialization has since been depriciated, its now common practice to use json or xml schemas to store your object data."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Inventory Manager Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/InventoryManagmentSystem"
 
   return (
       <Wrapper>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default InventorySystem

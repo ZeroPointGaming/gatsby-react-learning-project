@@ -110,10 +110,36 @@ export const FeaturedImage = styled.img
     cursor: pointer;
 `
 
+export const SoftwareImage = styled.img
+`
+    display: block;
+    vertical-align: middle;
+    border: 0;
+    cursor: pointer;
+    margin: auto;
+`
+
+export const MaxSoftwareImage = styled.img
+`
+    display: block;
+    vertical-align: middle;
+    border: 0;
+    cursor: pointer;
+    margin: auto;
+    width: 100%;
+`
+
 export const FeaturedImageCaption = styled.p
 `
     text-decoration: none;
     color: black;
+`
+
+export const SoftwareImageCaption = styled.p
+`
+    text-decoration: none;
+    color: black;
+    text-align: center;
 `
 
 export const Row = styled.div

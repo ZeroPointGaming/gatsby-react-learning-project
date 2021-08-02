@@ -10,19 +10,19 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/Image_Name.Extension'
+import AppImage from '../images/software/warframeapp.png'
 
 /* Render the main page content */
-const DotNetTwitchAPIInterface = () => {
+const WarframeDotNet = () => {
   const AppDownloadUrl = "";
-  const AppMainHeader = "";
-  const AppMainDescription = "";
-  const LatestVersion = "v1.1";
+  const AppMainHeader = "Warframe Companion App";
+  const AppMainDescription = "A Warframe companion app under development, integrates with multiple data apis on the web.";
+  const LatestVersion = "No Release Yet";
 
-  const ContentDescription = ""
+  const ContentDescription = "Our mission is to take all of the warframe websites (Warframe.Market, WarframeStats.us etc and put them all into on mega app which will contain all the information a player would need. Drop locations for items, drop chances, market prices, build guides, and more. The long term end game goal is a total inventory management system with future ambitions to integrate with DE's player data so the app can tell the player what they are missing and where they need to go to get what they need. The short term roadmap is to just get the program into an alpha release, build a website for it with its own restful api interfaces. Eventually users will be able to manually input inventory data to their programs. Our app is built on the .NET 5.0 Framework using MetroFramework for UI."
   const ContentImage = AppImage;
-  const ContentImageAlt = ""
-  const ContentRepoLink = ""
+  const ContentImageAlt = "Warframe App Preview"
+  const ContentRepoLink = "https://github.com/ZeroPointGaming/WarframeCompanionApp"
 
   return (
       <Wrapper>
@@ -51,7 +51,7 @@ const DotNetTwitchAPIInterface = () => {
 
             <ContentSection className="container">
               <p className="repo-link">Latest Version: {LatestVersion}</p>
-              <ColumnFullWidth postImageSrc={ContentImage} postDescription={ContentDescription} postImageAlt={ContentImageAlt}></ColumnFullWidth>
+              <ColumnFullWidth postImageSrc={ContentImage} postDescription={ContentDescription} postImageAlt={ContentImageAlt} overflowImage="1"></ColumnFullWidth>
 
               <p className="repo-link">Click <a href={ContentRepoLink}>Here</a> to visit the github repository for this project.</p>
             </ContentSection>
@@ -64,4 +64,4 @@ const DotNetTwitchAPIInterface = () => {
   )
 }
 
-export default DotNetTwitchAPIInterface
+export default WarframeDotNet
