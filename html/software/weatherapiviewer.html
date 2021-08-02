@@ -1,0 +1,588 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132281695-1"></script>
+		<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-132281695-1');</script>
+			
+		<!-- Adsense -->
+		<script data-ad-client="ca-pub-3968373060464813" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		
+		<!-- GDR Cookie Compliance -->
+		<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+		<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+		<script>window.addEventListener("load", function(){window.cookieconsent.initialise({"palette": {"popup": {"background": "#edeff5","text": "#838391"},"button": {"background": "#4b81e8"}},"content": {"message": "Warning, By using our site you agree to our cookie policy. This website uses cookies to ensure you get the best user experience on our website. Click learn more to read our cookie policy.","href": "https://zeropointgaming.com/cookies.html"}})});</script>
+		
+		
+		<title>Weather API Viewer</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="../favi/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../favi/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../favi/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../favi/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../favi/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../favi/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../favi/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../favi/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../favi/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../favi/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../favi/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favi/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favi/favicon-16x16.png">
+		<link rel="manifest" href="/favi/manifest.json">
+		
+		<!-- Meta Information -->
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="../favi/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="description" content="Zero point gaming is a fantastic gaming community built around friendship and loyalty. We are a group of smart, like minded individuals who enjoy comedic satire while gaming or just chilling on comms. Sound interesting, contact us for an invite to join our group.">
+		<meta name="keywords" content="Zero, Point, Gaming, ZeroPointGaming, Programming, ZeroPointProgramming, Youtube Channel, Twitch Stream, Teamspeak Channel, Teamspeak Server, Loyalty, Fun, Entertainment">
+		<meta name="author" content="ZeroPointGaming">
+		<style>
+			.icon.circle.fa-youtube {
+				background: #db6b67;
+				color: #fff;
+			}
+
+			.icon.circle.fa-youtube:hover {
+				background: #df7b77;
+			}
+
+			.icon.circle.fa-twitch {
+				background: #da83ae;
+				color: #fff;
+			}
+
+			.icon.circle.fa-twitch:hover {
+				background: #df93b8;
+			}
+		</style>
+	</head>
+	
+	<body class="no-sidebar">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="#"><span>Weather API Viewer</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="../index.html">Home</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-download"></span>
+						<h2><strong>Weather Application using JSON API Response</strong></h2>
+						<p>Shows you the weather for your local area.</p>
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style4 container special">
+							<header>
+								<h3>Simplistic Dark Theme Responsive Design</h3>
+							</header>
+							<img src="../images/weatherviewer.png" alt="" />
+						
+							<div id="#spacer" style="padding-top:20px;padding-bottom:20px;"></div>
+
+							<div class="row" id="#youtube-featured">
+								<div class="12u">
+									<center><h1><strong>[VB] Visual Basic Projects - Weather Viewer Via JSON API</strong></h1></center>
+									<center><iframe width="100%" height="500" src="https://www.youtube.com/embed/lMyrL_QK8TQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>											
+									<br/>
+									<center><h3>Source Code</h3></center>
+									
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;text-align:left;"><table><tr><td><pre style="margin: 0; line-height: 125%">  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Imports</span> <span style="color: #00aaaa; text-decoration: underline">System.Web.Script.Serialization</span>
+<span style="color: #0000aa">Imports</span> <span style="color: #00aaaa; text-decoration: underline">System.IO</span>
+<span style="color: #0000aa">Imports</span> <span style="color: #00aaaa; text-decoration: underline">System.Net</span>
+
+<span style="color: #0000aa">Public</span> <span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">Form1</span>
+    <span style="color: #aaaaaa; font-style: italic">&#39;Location Data</span>
+    <span style="color: #0000aa">Public</span> lat <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = My.Settings.Latitude
+    <span style="color: #0000aa">Public</span> log <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = My.Settings.Longitude
+
+    <span style="color: #aaaaaa; font-style: italic">&#39;Retrieve location data via ip address</span>
+    <span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">Form1_Load</span>(sender <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Object</span>, e <span style="color: #0000aa">As</span> EventArgs) <span style="color: #0000aa">Handles</span> <span style="color: #0000aa">MyBase</span>.Load
+        RefreshLocationData()
+
+        <span style="color: #0000aa">If</span> My.Settings.Latitude = <span style="color: #0000aa">Nothing</span> <span style="color: #0000aa">And</span> My.Settings.Longitude = <span style="color: #0000aa">Nothing</span> <span style="color: #0000aa">Then</span>
+            <span style="color: #0000aa">Try</span>
+                <span style="color: #aaaaaa; font-style: italic">&#39;Query location data</span>
+                <span style="color: #0000aa">Dim</span> Req <span style="color: #0000aa">As</span> HttpWebRequest
+                <span style="color: #0000aa">Dim</span> Ret <span style="color: #0000aa">As</span> HttpWebResponse = <span style="color: #0000aa">Nothing</span>
+                <span style="color: #0000aa">Dim</span> SR <span style="color: #0000aa">As</span> StreamReader
+                Req = <span style="color: #0000aa">DirectCast</span>(WebRequest.Create(<span style="color: #aa5500">&quot;http://ip-api.com/json&quot;</span>), HttpWebRequest)
+                Ret = <span style="color: #0000aa">DirectCast</span>(Req.GetResponse(), HttpWebResponse)
+                SR = <span style="color: #0000aa">New</span> StreamReader(Ret.GetResponseStream())
+                <span style="color: #0000aa">Dim</span> Raw <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #0000aa">Nothing</span>
+                Raw = SR.ReadToEnd()
+                <span style="color: #0000aa">Dim</span> JavaScriptSerialization <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> JavaScriptSerializer()
+                <span style="color: #0000aa">Dim</span> ipdata_object <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> IPData()
+
+                ipdata_object = JavaScriptSerialization.Deserialize(Raw, ipdata_object.GetType)
+
+                lat = ipdata_object.lat
+                log = ipdata_object.lon
+                My.Settings.Latitude = lat
+                My.Settings.Longitude = log
+                My.Settings.Save()
+            <span style="color: #0000aa">Catch</span> ex <span style="color: #0000aa">As</span> Exception
+                MessageBox.Show(ex.ToString())
+            <span style="color: #0000aa">End</span> <span style="color: #0000aa">Try</span>
+        <span style="color: #0000aa">Else</span>
+            lat = My.Settings.Latitude
+            log = My.Settings.Longitude
+        <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
+
+        CollectWeatherData(lat, log)
+    <span style="color: #0000aa">End</span> <span style="color: #0000aa">Sub</span>
+
+    <span style="color: #aaaaaa; font-style: italic">&#39;generate your own free api key at openweathermap.org to use with your own project.</span>
+    <span style="color: #0000aa">Public</span> api_key <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #aa5500">&quot;&amp;APPID=a756bb2cdd548defd8539e8e36c1d2df&quot;</span>
+    <span style="color: #0000aa">Public</span> api_measurement <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #aa5500">&quot;imperial&quot;</span>
+
+    <span style="color: #0000aa">Public</span> weather_url <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #aa5500">&quot;http://api.openweathermap.org/data/2.5/weather?lat=&quot;</span> + My.Settings.Latitude + <span style="color: #aa5500">&quot;&amp;lon=&quot;</span> + My.Settings.Longitude + <span style="color: #aa5500">&quot;&amp;APPID=a756bb2cdd548defd8539e8e36c1d2df&amp;units=imperial&quot;</span>
+
+    <span style="color: #aaaaaa; font-style: italic">&#39;Refresh Location Data</span>
+    <span style="color: #0000aa">Public</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">RefreshLocationData</span>()
+        ListBox2.Items.Clear()
+
+        <span style="color: #aaaaaa; font-style: italic">&#39;Query location data</span>
+        <span style="color: #0000aa">Dim</span> Req <span style="color: #0000aa">As</span> HttpWebRequest
+        <span style="color: #0000aa">Dim</span> Ret <span style="color: #0000aa">As</span> HttpWebResponse = <span style="color: #0000aa">Nothing</span>
+        <span style="color: #0000aa">Dim</span> SR <span style="color: #0000aa">As</span> StreamReader
+        Req = <span style="color: #0000aa">DirectCast</span>(WebRequest.Create(<span style="color: #aa5500">&quot;http://ip-api.com/json&quot;</span>), HttpWebRequest)
+        Ret = <span style="color: #0000aa">DirectCast</span>(Req.GetResponse(), HttpWebResponse)
+        SR = <span style="color: #0000aa">New</span> StreamReader(Ret.GetResponseStream())
+        <span style="color: #0000aa">Dim</span> Raw <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #0000aa">Nothing</span>
+        Raw = SR.ReadToEnd()
+        <span style="color: #0000aa">Dim</span> JavaScriptSerialization <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> JavaScriptSerializer()
+        <span style="color: #0000aa">Dim</span> ipdata_object <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> IPData()
+
+        ipdata_object = JavaScriptSerialization.Deserialize(Raw, ipdata_object.GetType)
+
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;----- Coordinates -----&quot;</span>)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Latitude: &quot;</span> + ipdata_object.lat)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Longitude: &quot;</span> + ipdata_object.lon)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;&quot;</span>)
+
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;----- Location -----&quot;</span>)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Country: &quot;</span> + ipdata_object.country)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;City: &quot;</span> + ipdata_object.city)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Zip Code: &quot;</span> + ipdata_object.zip)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;&quot;</span>)
+
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;----- User Data -----&quot;</span>)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;ISP: &quot;</span> + ipdata_object.isp)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;ORG: &quot;</span> + ipdata_object.org)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Timezone: &quot;</span> + ipdata_object.timezone)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;IP: &quot;</span> + ipdata_object.query)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;&quot;</span>)
+
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;----- Region Data -----&quot;</span>)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Country Code: &quot;</span> + ipdata_object.countryCode)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Region Name: &quot;</span> + ipdata_object.regionName)
+        ListBox2.Items.Add(<span style="color: #aa5500">&quot;Region: &quot;</span> + ipdata_object.region)
+    <span style="color: #0000aa">End</span> <span style="color: #0000aa">Sub</span>
+
+    <span style="color: #aaaaaa; font-style: italic">&#39;collect data </span>
+    <span style="color: #0000aa">Public</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">CollectWeatherData</span>(latitude <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>, longitude <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>)
+        <span style="color: #0000aa">Try</span>
+            <span style="color: #aaaaaa; font-style: italic">&#39;Reset application</span>
+            ListBox1.Items.Clear()
+
+            <span style="color: #aaaaaa; font-style: italic">&#39;Query weather data</span>
+            <span style="color: #0000aa">Dim</span> Req <span style="color: #0000aa">As</span> HttpWebRequest
+            <span style="color: #0000aa">Dim</span> Ret <span style="color: #0000aa">As</span> HttpWebResponse = <span style="color: #0000aa">Nothing</span>
+            <span style="color: #0000aa">Dim</span> SR <span style="color: #0000aa">As</span> StreamReader
+            Req = <span style="color: #0000aa">DirectCast</span>(WebRequest.Create(weather_url), HttpWebRequest)
+            Ret = <span style="color: #0000aa">DirectCast</span>(Req.GetResponse(), HttpWebResponse)
+            SR = <span style="color: #0000aa">New</span> StreamReader(Ret.GetResponseStream())
+            <span style="color: #0000aa">Dim</span> Raw <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> = <span style="color: #0000aa">Nothing</span>
+            Raw = SR.ReadToEnd()
+            <span style="color: #0000aa">Dim</span> JavaScriptSerialization <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> JavaScriptSerializer()
+            <span style="color: #0000aa">Dim</span> weatherdata <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> WeatherResponse()
+
+            weatherdata = JavaScriptSerialization.Deserialize(Raw, weatherdata.GetType)
+
+            <span style="color: #aaaaaa; font-style: italic">&#39;populate the labels with data</span>
+            Label1.Text = <span style="color: #aa5500">&quot;Weather: &quot;</span> + weatherdata.weather(<span style="color: #009999">0</span>).main
+            Label4.Text = <span style="color: #aa5500">&quot;Geographic Coordinates: &quot;</span> + lat + <span style="color: #aa5500">&quot; , &quot;</span> + log
+            Label5.Text = <span style="color: #aa5500">&quot;Tempurature: &quot;</span> + weatherdata.main.temp.ToString() + <span style="color: #aa5500">&quot;°&quot;</span>
+            Label6.Text = <span style="color: #aa5500">&quot;Tempurature Forecast: &quot;</span> + <span style="color: #aa5500">&quot;High &quot;</span> + weatherdata.main.temp_max.ToString() + <span style="color: #aa5500">&quot;°&quot;</span> + <span style="color: #aa5500">&quot; / &quot;</span> + <span style="color: #aa5500">&quot;Low &quot;</span> + weatherdata.main.temp_min.ToString() + <span style="color: #aa5500">&quot;°&quot;</span>
+
+            <span style="color: #aaaaaa; font-style: italic">&#39;set application icon</span>
+            <span style="color: #0000aa">Me</span>.Icon = <span style="color: #0000aa">DirectCast</span>(My.Resources.ResourceManager.GetObject(<span style="color: #aa5500">&quot;_&quot;</span> + weatherdata.weather(<span style="color: #009999">0</span>).icon.ToString()), Icon)
+
+            <span style="color: #aaaaaa; font-style: italic">&#39;Populate raw weather data</span>
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;----- Weather Data -----&quot;</span>)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Forecast: &quot;</span> + weatherdata.weather(<span style="color: #009999">0</span>).main)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Tempurature: &quot;</span> + weatherdata.main.temp + <span style="color: #aa5500">&quot;° F&quot;</span>)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Wind Speed: &quot;</span> + weatherdata.wind.speed + <span style="color: #aa5500">&quot; mph&quot;</span>)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Wind Direction: &quot;</span> + weatherdata.wind.deg + <span style="color: #aa5500">&quot;°&quot;</span>)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;&quot;</span>)
+
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;----- Systemic Data -----&quot;</span>)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Weather ID: &quot;</span> + weatherdata.weather(<span style="color: #009999">0</span>).id)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Weather Icon: &quot;</span> + weatherdata.weather(<span style="color: #009999">0</span>).icon)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Country Code: &quot;</span> + weatherdata.sys.country)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Sunrise Data:  &quot;</span> + weatherdata.sys.sunrise)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Sunset Data: &quot;</span> + weatherdata.sys.sunset)
+            ListBox1.Items.Add(<span style="color: #aa5500">&quot;Response ID: &quot;</span> + weatherdata.id)
+
+        <span style="color: #0000aa">Catch</span> ex <span style="color: #0000aa">As</span> Exception
+            MessageBox.Show(ex.ToString())
+        <span style="color: #0000aa">End</span> <span style="color: #0000aa">Try</span>
+    <span style="color: #0000aa">End</span> <span style="color: #0000aa">Sub</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #aaaaaa; font-style: italic">&#39;IP Data API Deserialization classes for http://ip-api.com/json API response</span>
+<span style="color: #1e90ff">&lt;Serializable&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">IPData</span>
+    <span style="color: #0000aa">Public</span> asinfo <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> city <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> country <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> countryCode <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> isp <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> lat <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> lon <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> org <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> query <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> region <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> regionName <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> status <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> timezone <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> zip <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #aaaaaa; font-style: italic">&#39;Weather API Deserialization classes for openweathermap.org API response</span>
+<span style="color: #1e90ff">&lt;Serializable&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">WeatherResponse</span>
+    <span style="color: #0000aa">Public</span> coord <span style="color: #0000aa">As</span> CoordinateInfo
+    <span style="color: #0000aa">Public</span> weather <span style="color: #0000aa">As</span> WeatherInfo()
+    <span style="color: #0000aa">Public</span> base <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> main <span style="color: #0000aa">As</span> MainInfo
+    <span style="color: #0000aa">Public</span> visibility <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> wind <span style="color: #0000aa">As</span> WindInfo
+    <span style="color: #0000aa">Public</span> clouds <span style="color: #0000aa">As</span> CloudInfo
+    <span style="color: #0000aa">Public</span> dt <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> sys <span style="color: #0000aa">As</span> SysInfo
+    <span style="color: #0000aa">Public</span> id <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> name <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> <span style="color: #aaaaaa; font-style: italic">&#39;Location Name</span>
+    <span style="color: #0000aa">Public</span> cod <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">CoordinateInfo</span>
+    <span style="color: #0000aa">Public</span> lon <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> lat <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">WeatherInfo</span>
+    <span style="color: #0000aa">Public</span> id <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> main <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> <span style="color: #aaaaaa; font-style: italic">&#39;Weather Type</span>
+    <span style="color: #0000aa">Public</span> description <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> <span style="color: #aaaaaa; font-style: italic">&#39;Weather Description</span>
+    <span style="color: #0000aa">Public</span> icon <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">MainInfo</span>
+    <span style="color: #0000aa">Public</span> temp <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> pressure <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> humidity <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> temp_min <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> temp_max <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">WindInfo</span>
+    <span style="color: #0000aa">Public</span> speed <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> <span style="color: #aaaaaa; font-style: italic">&#39;Wind Speed</span>
+    <span style="color: #0000aa">Public</span> deg <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span> <span style="color: #aaaaaa; font-style: italic">&#39;Wind Heading</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">CloudInfo</span>
+    <span style="color: #0000aa">Public</span> all <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+
+<span style="color: #1e90ff">&lt;SerializableAttribute&gt;</span>
+<span style="color: #0000aa">Class</span> <span style="color: #00aa00; text-decoration: underline">SysInfo</span>
+    <span style="color: #0000aa">Public</span> type <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> id <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> message <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> country <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> sunrise <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+    <span style="color: #0000aa">Public</span> sunset <span style="color: #0000aa">As</span> <span style="color: #00aaaa">String</span>
+<span style="color: #0000aa">End</span> <span style="color: #0000aa">Class</span>
+</pre></td></tr></table></div>
+
+								</div>
+							</div>
+						</section>
+				</article>
+
+			<!-- Footer -->
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="https://twitter.com/0PointGaming" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/ZeroPointGaming" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://twitch.tv/0PointGaming" class="icon circle fa-twitch"><span class="label">Twitch</span></a></li>
+						<li><a href="https://www.youtube.com/channel/UCQpXJZ9BTYWfAF0SDwbKaQg?view_as=subscriber" class="icon circle fa-youtube"><span class="label">Youtube</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; Zero Point Gaming 2018-2019</li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

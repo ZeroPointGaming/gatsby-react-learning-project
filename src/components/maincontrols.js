@@ -17,7 +17,7 @@ export const Banner = styled.section
 `
     background-attachment: scroll, scroll, scroll, fixed;
     background-color: #645862;
-    background-image: url("images/light-bl.svg"), url("images/light-br.svg"), url("images/overlay.png"), url("../../images/tarkov-banner-tall.png");
+    background-image: url("./images/light-bl.svg"), url("./images/light-br.svg"), url("./images/overlay.png"), url("./images/tarkov-banner-tall.png");
     background-position: bottom left, bottom right, top left, top center;
     background-repeat: no-repeat, no-repeat, repeat, no-repeat;
     background-size: 25em, 25em, auto, cover;
@@ -29,7 +29,7 @@ export const Banner = styled.section
 
 export const MainArticle = styled.article
 `
-    background-image: url("images/dark-tl.svg"), url("images/dark-tr.svg"), url("images/dark-bl.svg"), url("images/dark-br.svg");
+    background-image: url("./images/dark-tl.svg"), url("./images/dark-tr.svg"), url("./images/dark-bl.svg"), url("./images/dark-br.svg");
     background-position: top left, top right, bottom left, bottom right;
     background-repeat: no-repeat;
     background-size: 25em;
@@ -45,6 +45,7 @@ export const ContentSection = styled.section
     margin-left: auto;
     border:1px dashed grey;
 	margin-right: auto;
+    width: 80%;
 `
 
 export const MajorHeader = styled.header
@@ -56,7 +57,7 @@ export const MajorHeader = styled.header
 export const Level1Header = styled.h1
 `
     color: inherit;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75em;
     margin-bottom: 1em;
     text-transform: uppercase;
@@ -65,7 +66,7 @@ export const Level1Header = styled.h1
 export const Level2Header = styled.h2
 `
     color: inherit;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75em;
     margin-bottom: 1em;
     text-transform: uppercase;
@@ -78,7 +79,7 @@ export const Level2Header = styled.h2
 export const Level3Header = styled.h3
 `
     color: inherit;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.75em;
     margin-bottom: 1em;
     text-transform: uppercase;
@@ -113,4 +114,30 @@ export const FeaturedImageCaption = styled.p
 `
     text-decoration: none;
     color: black;
+`
+
+export const Row = styled.div
+`
+    margin: -50px 0 -1px -50px;
+    border-bottom: solid 1px transparent;
+    box-sizing: border-box;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 50px 50px 0 50px;
+`
+
+export const CenteredImage = styled.img
+`
+    margin: auto;
+    text-align: center;
+    display: block;
 `

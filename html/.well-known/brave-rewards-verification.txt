@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: zeropointgaming.net
+Token: ad1d17e43f752f974d788cb7a7ecdc36a0e8865a22b49202fe6d2cebe92debf1

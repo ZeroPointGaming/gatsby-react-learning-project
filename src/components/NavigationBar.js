@@ -1,25 +1,13 @@
 import React, { useState } from 'react'
 
 /* Load Drop Down Navigation Menus */
-import WebsiteDropDown from './dropdowns/websites'
-import SoftwareDropDown from './dropdowns/software'
-import WebAppDropDown from './dropdowns/webapps'
-import IRLDropDown from './dropdowns/irl'
-import ConnectDropDrown from './dropdowns/connect'
+import { IRLItems, /* WebappItems, */ WebsiteItems, SoftwareItems, ConnectItems } from './dropdowns/menus';
 
-/* Import Font Awesome */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTimes, faBars, faCaretDown, } from '@fortawesome/free-solid-svg-icons'
-
-/* Import Navigation Style Components */
-import './NavigationBar.css'
-import { NaviBar, NavLink, NavItem, NavMenu } from './dropdowns/controls'
-
-const NavigationBar = ({ pageTitle, children }) => {
-    const [click, setClick] = useState(false);
+const NavigationBar = () => {
+    const [unsuedVar, setClick] = useState(false);
     const [websites, setWebsiteDropdown] = useState(false);
     const [software, setSoftwareDropdown] = useState(false);
-    const [webapps, setWebappDropdown] = useState(false);
+    //const [webapps, setWebappDropdown] = useState(false);
     const [connect, setConnectDropdown] = useState(false);
     const [irl, setIrlDropdown] = useState(false);
 
@@ -73,6 +61,7 @@ const NavigationBar = ({ pageTitle, children }) => {
         }
     };
 
+    /*
     const WebappOnMouseEnter = () => {
         if (window.innerWidth < 960) {
             setWebappDropdown(false);
@@ -88,6 +77,7 @@ const NavigationBar = ({ pageTitle, children }) => {
             setWebappDropdown(false);
         }
     };
+    */
 
     const IrlOnMouseEnter = () => {
         if (window.innerWidth < 960) {
@@ -106,36 +96,43 @@ const NavigationBar = ({ pageTitle, children }) => {
     };
 
     return (
-        <>
-            <NaviBar>
-                <NavMenu className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <NavItem onMouseEnter={WebsiteOnMouseEnter} onMouseLeave={WebsiteOnMouseLeave}>
-                        <NavLink href="" onClick={closeMobileMenu}>Website Projects <FontAwesomeIcon icon={faCaretDown} size='1x'/></NavLink>
-                        {websites && <WebsiteDropDown />}
-                    </NavItem>
+        <header id="header" className="alt reveal">
+            <nav className="navMax navbar navbar-expand-lg navbar-dark">
+                <ul>
+                    <li className="nav-item dropdown" onMouseEnter={IrlOnMouseEnter} onMouseLeave={IrlOnMouseLeave}>
+                        <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">IRL Projects</a>
+                        
+                        <div className={irl ? "dropdown-menu show" : "dropdown-menu"} aria-labelledby="navbarDropdown">
+                            {IRLItems.map((linkItem) => <a className="dropdown-item" href={linkItem.path}>{linkItem.title}</a>)}
+                        </div>
+                    </li>
 
-                    <NavItem onMouseEnter={SoftwareOnMouseEnter} onMouseLeave={SoftwareOnMouseLeave}>
-                        <NavLink href="" onClick={closeMobileMenu}>Software Projects <FontAwesomeIcon icon={faCaretDown} size='1x'/></NavLink>
-                        {software && <SoftwareDropDown />}
-                    </NavItem>
+                    <li className="nav-item dropdown" onMouseEnter={SoftwareOnMouseEnter} onMouseLeave={SoftwareOnMouseLeave}>
+                        <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Software Projects</a>
+                        
+                        <div className={software ? "dropdown-menu show" : "dropdown-menu"} aria-labelledby="navbarDropdown">
+                            {SoftwareItems.map((linkItem) => <a className="dropdown-item" href={linkItem.path}>{linkItem.title}</a>)}
+                        </div>
+                    </li>
 
-                    <NavItem onMouseEnter={WebappOnMouseEnter} onMouseLeave={WebappOnMouseLeave}>
-                        <NavLink href="" onClick={closeMobileMenu}>WebApp Projects <FontAwesomeIcon icon={faCaretDown} size='1x'/></NavLink>
-                        {webapps && <WebAppDropDown />}
-                    </NavItem>
+                    <li className="nav-item dropdown" onMouseEnter={WebsiteOnMouseEnter} onMouseLeave={WebsiteOnMouseLeave}>
+                        <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Website Projects</a>
+                        
+                        <div className={websites ? "dropdown-menu show" : "dropdown-menu"} aria-labelledby="navbarDropdown">
+                            {WebsiteItems.map((linkItem) => <a className="dropdown-item" href={linkItem.path}>{linkItem.title}</a>)}
+                        </div>
+                    </li>
 
-                    <NavItem onMouseEnter={IrlOnMouseEnter} onMouseLeave={IrlOnMouseLeave}>
-                        <NavLink href="" onClick={closeMobileMenu}>IRL Projects <FontAwesomeIcon icon={faCaretDown} size='1x'/></NavLink>
-                        {irl && <IRLDropDown />}
-                    </NavItem>
-
-                    <NavItem onMouseEnter={ConnectOnMouseEnter} onMouseLeave={ConnectOnMouseLeave}>
-                        <NavLink href="" onClick={closeMobileMenu}>Connect With Us <FontAwesomeIcon icon={faCaretDown} size='1x'/></NavLink>
-                        {connect && <ConnectDropDrown />}
-                    </NavItem>
-                </NavMenu>
-            </NaviBar>
-        </>
+                    <li className="nav-item dropdown" onMouseEnter={ConnectOnMouseEnter} onMouseLeave={ConnectOnMouseLeave}>
+                        <a className="nav-link dropdown-toggle" onClick={closeMobileMenu} href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Connect With Us</a>
+                        
+                        <div className={connect ? "dropdown-menu show" : "dropdown-menu"} aria-labelledby="navbarDropdown">
+                            {ConnectItems.map((linkItem) => <a className="dropdown-item" href={linkItem.path}>{linkItem.title}</a>)}
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     )
 }
 
