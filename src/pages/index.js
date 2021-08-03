@@ -1,11 +1,12 @@
 import * as React from 'react'
-import NavigationBar from '../components/NavigationBar'
+import NavigationBar from '../components/navigationbar'
 import Helmet from "react-helmet"
 import { Wrapper, Banner, MainArticle, ContentSection, MajorHeader, Level2Header, Row, Level3Header } from '../components/maincontrols.js'
 import DualItemColumn from '../components/column6u12u'
 import ColumnFullWidth from '../components/columnfullwidth'
-import TwitchChannelEmbed from '../components/TwitchEmbed'
-import FooterSection from '../components/FooterSection'
+import TwitchChannelEmbed from '../components/twitchembed'
+import FooterSection from '../components/footersection'
+import TwitchDualItemColumn from '../components/twitchdualcolumn'
 
 /* Import static images for the main page | TODO - Add new games to list*/
 import Tarkov from "./images/games/tarkov.png"
@@ -16,11 +17,10 @@ import Rust from "./images/games/rust-min.png"
 import Warframe from "./images/games/warframe-min.jpg"
 //import CoDMW from "./images/games/cod.png"
 import FalloutHeader from "./images/games/fallout-min.jpg"
-import TwitchDualItemColumn from '../components/TwitchDualColumn'
 import SevenDays from "./images/games/7days-min.jpg"
 import SpaceEngineers from "./images/games/spaceengineers-min.jpg"
 import HaloHeader from "./images/games/halo-min.jpg"
-
+ 
 /* Import static images for twitch content section */
 import HardWare from './images/twitchbanners/hardware.jpg'
 import AboutMe from './images/twitchbanners/about.jpg'
