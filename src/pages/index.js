@@ -1,12 +1,12 @@
 import * as React from 'react'
-import NavigationBar from './components/navigationbar'
+import NavigationBar from '../components/navigationbar'
 import Helmet from "react-helmet"
-import { Wrapper, Banner, MainArticle, ContentSection, MajorHeader, Level2Header, Row, Level3Header } from './components/maincontrols.js'
-import DualItemColumn from './components/column6u12u'
-import ColumnFullWidth from './components/columnfullwidth'
-import TwitchChannelEmbed from './components/twitchembed'
-import FooterSection from './components/footersection'
-import TwitchDualItemColumn from './components/twitchdualcolumn'
+import { Wrapper, Banner, MainArticle, ContentSection, MajorHeader, Level2Header, Row, Level3Header } from '../components/maincontrols.js'
+import DualItemColumn from '../components/column6u12u'
+import ColumnFullWidth from '../components/columnfullwidth'
+import TwitchChannelEmbed from '../components/twitchembed'
+import FooterSection from '../components/footersection'
+import TwitchDualItemColumn from '../components/twitchdualcolumn'
 
 /* Import static images for the main page | TODO - Add new games to list*/
 import Tarkov from "./images/games/tarkov.png"
