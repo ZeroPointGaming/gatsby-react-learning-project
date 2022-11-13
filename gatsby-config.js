@@ -8,7 +8,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     `gatsby-plugin-react-helmet`,
     `react-twitch-embed-video`,
-    `gatsby-plugin-netlify-cms-paths`,
+    `gatsby-plugin-relative-paths`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -36,13 +36,5 @@ module.exports = {
         extensions: [`.mdx`, `.md`],
       },
     },
-    {
-       resolve: `gatsby-transformer-remark`,
-       options: {
-         plugins: [
-           `gatsby-plugin-netlify-cms-paths`,
-         ],
-       },
-     },
   ],
 };
