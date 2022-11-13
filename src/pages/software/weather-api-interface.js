@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../../images/software/weatherviewer.png'
+import AppImage from '../images/software/weatherviewer.png'
 
 /* Render the main page content */
 const WeatherViewer = () => {
