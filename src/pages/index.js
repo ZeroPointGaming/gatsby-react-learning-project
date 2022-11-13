@@ -8,7 +8,7 @@ import ColumnFullWidth from '../components/columnfullwidth'
 import FooterSection from '../components/footersection'
 import TwitchDualItemColumn from '../components/twitchdualcolumn'
 
-import * from '../styles/main.css';
+import * from '../styles/main.css'
 
 /* Import static images for the main page | TODO - Add new games to list*/
 import Tarkov from "./images/games/tarkov.png"
