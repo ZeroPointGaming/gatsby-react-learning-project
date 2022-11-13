@@ -8,7 +8,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     `gatsby-plugin-react-helmet`,
     `react-twitch-embed-video`,
-    `gatsby-plugin-relative-paths`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
