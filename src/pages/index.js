@@ -4,7 +4,7 @@ import Helmet from "react-helmet"
 import { Wrapper, Banner, MainArticle, ContentSection, MajorHeader, Level2Header, Row, Level3Header } from '../components/maincontrols.js'
 import DualItemColumn from '../components/column6u12u'
 import ColumnFullWidth from '../components/columnfullwidth'
-import TwitchChannelEmbed from '../components/twitchembed'
+//import TwitchChannelEmbed from '../components/twitchembed'
 import FooterSection from '../components/footersection'
 import TwitchDualItemColumn from '../components/twitchdualcolumn'
 
@@ -89,7 +89,7 @@ const IndexPage = () => {
             <MajorHeader><Level2Header className="bold">Check Out Our Twitch Stream</Level2Header></MajorHeader>
 
             <Row>
-              <TwitchChannelEmbed inputChannel="0pointgaming"></TwitchChannelEmbed>
+              //<TwitchChannelEmbed inputChannel="0pointgaming"></TwitchChannelEmbed>
 
               <TwitchDualItemColumn postImageSrc={AboutMe} postImageAlt={"TwitchHeaderAboutMe"} postDescription={"Welcome to my channel, my name is Justin, I enjoy coding, gaming, tv and movies etc, I'm a casual gamer looking to make it in this crazy fast paced world. Come and join me :) Lets have some fun."}></TwitchDualItemColumn>
 
