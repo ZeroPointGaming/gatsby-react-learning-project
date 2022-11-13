@@ -1,16 +1,16 @@
 import * as React from 'react'
-import NavigationBar from '../../components/navigationbar'
+import NavigationBar from '../../../components/navigationbar'
 import Helmet from "react-helmet"
-import { Wrapper, Banner, MainArticle, ContentSection, Level1Header } from '../../components/maincontrols.js'
-import ColumnFullWidth from '../../components/softwarecolumnfull'
-import FooterSection from '../../components/footersection'
+import { Wrapper, Banner, MainArticle, ContentSection, Level1Header } from '../../../components/maincontrols.js'
+import ColumnFullWidth from '../../../components/softwarecolumnfull'
+import FooterSection from '../../../components/footersection'
 
 /* Font Awesome Libraries */
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 /* Import Images */
-import AppImage from '../images/software/weatherviewer.png'
+import AppImage from '../../images/software/weatherviewer.png'
 
 /* Render the main page content */
 const WeatherViewer = () => {
